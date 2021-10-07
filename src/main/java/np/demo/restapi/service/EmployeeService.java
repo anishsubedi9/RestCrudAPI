@@ -6,7 +6,8 @@ import np.demo.restapi.model.Employee;
 
 public interface EmployeeService {
 	
-List<Employee> getAllEmployee();
+List<Employee> getAllEmployees();
+
 
 
 }
