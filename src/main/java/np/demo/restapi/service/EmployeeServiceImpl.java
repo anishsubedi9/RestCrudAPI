@@ -29,8 +29,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 
 	@Override
-	public void saveEmployee(Employee employee) {
-		this.employeeRepository.save(employee); 
+	public Employee saveEmployee(Employee employee) {
+		return this.employeeRepository.save(employee); 
 		
 	}
 
@@ -52,6 +52,17 @@ public class EmployeeServiceImpl implements EmployeeService {
 		this.employeeRepository.deleteById(id);
 	}
 
+
+	@Override
+	public Employee updateEmployee(Employee employee) {
+		// TODO Auto-generated method stub
+		return this.employeeRepository.save(employee);
+	}
+
+
+
+
+	
 
 
 }
